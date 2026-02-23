@@ -31,7 +31,7 @@ body{font-family:'Noto Sans SC','Montserrat',sans-serif;color:#1A2332;overflow-x
 .lift:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(26,35,50,.1)}
 .btn-g{transition:all .3s}
 .btn-g:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,175,55,.3)}
-.nav-s{background:rgba(255,255,255,.96)!important;backdrop-filter:blur(20px);box-shadow:0 1px 20px rgba(26,35,50,.07)}
+.nav-s{background:#ffffff!important;backdrop-filter:blur(20px);box-shadow:0 1px 20px rgba(26,35,50,.07)}
 .nav-s .nl,.nav-s .nlogo-text,.nav-s .lang-btn,.nav-s .hamburger-icon{color:#1A2332!important}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,1,.36,1)}
 .faq-a.open{max-height:600px}
@@ -54,7 +54,7 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 .section-label{display:flex;align-items:center;gap:12px;margin-bottom:28px}
 .section-label span:first-child{width:32px;height:1px;background:#D4AF37}
 .section-label span:last-child{color:#D4AF37;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.nav-logo{height:36px;width:auto;transition:filter .3s}
+.nav-logo{height:52px;width:auto;transition:filter .3s}
 .nav-logo-white{filter:brightness(0) invert(1)}
 .nav-s .nav-logo-white{filter:none}
 .quote-mark{font-family:Georgia,serif;font-size:4rem;line-height:1;color:#D4AF37;opacity:.3}
@@ -64,8 +64,8 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
   position:relative;
   overflow:hidden;
   background-image:
-    linear-gradient(135deg,rgba(15,23,32,.88) 0%,rgba(26,35,50,.9) 40%,rgba(42,58,82,.9) 100%),
-    url('file:///C:/Users/Chawhui/.cursor/projects/c-Users-Chawhui-Desktop-Project-index-html/assets/c__Users_Chawhui_AppData_Roaming_Cursor_User_workspaceStorage_b0f7e18dd7dadf909436a8e26e1cbda0_images_KL-1e4d08e4-db10-4c77-a2ab-06de08c718fc.png');
+    linear-gradient(135deg,rgba(15,23,32,.55) 0%,rgba(26,35,50,.62) 40%,rgba(42,58,82,.68) 100%),
+    url('./KL-hero.png');
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -81,19 +81,19 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 
 <!-- ===== 1. NAVBAR ===== -->
 <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 nav-s">
-<div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-20">
-  <a href="#top" class="flex items-center gap-3">
-    <img src="./Logo-Chinese_v1.png" alt="臻享家 Standard Living Management" class="nav-logo">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-32">
+  <a href="#top" class="flex items-center gap-4">
+    <img src="./Logo-Chinese_v1.png" alt="臻享家 Standard Living Management" class="nav-logo h-32 w-auto" style="max-height:8rem;">
   </a>
   <div class="hidden lg:flex items-center gap-9">
-    <a href="#services" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">服务方案</a>
-    <a href="#pricing" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">收费标准</a>
-    <a href="#about" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">关于我们</a>
-    <a href="#faq" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">常见问题</a>
-    <a href="#services" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Services</a>
-    <a href="#pricing" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Pricing</a>
-    <a href="#about" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">About</a>
-    <a href="#faq" class="nl text-white/70 text-[13px] font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">FAQ</a>
+    <a href="#services" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">服务方案</a>
+    <a href="#pricing" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">收费标准</a>
+    <a href="#about" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">关于我们</a>
+    <a href="#faq" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">常见问题</a>
+    <a href="#services" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Services</a>
+    <a href="#pricing" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Pricing</a>
+    <a href="#about" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">About</a>
+    <a href="#faq" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">FAQ</a>
   </div>
   <div class="hidden lg:flex items-center gap-4">
     <button onclick="toggleLang()" class="lang-btn text-white/40 text-xs font-bold tracking-widest hover:text-white transition cursor-pointer" id="langBtn">EN / 中文</button>
@@ -132,50 +132,34 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 <div class="mm-overlay" onclick="closeMM()"></div>
 
 <!-- ===== 2. HERO — STATIC PREMIUM DESIGN ===== -->
-<section class="hero-bg min-h-screen flex items-center">
+<section class="hero-bg min-h-screen flex items-center" style="background-image:linear-gradient(135deg,rgba(10,16,26,.25) 0%,rgba(10,16,26,.55) 55%,rgba(10,16,26,.75) 100%),url('./KL-hero.png');background-size:cover;background-position:center;background-repeat:no-repeat;">
   <!-- Decorative elements -->
-  <div class="hero-accent-line" style="height:60%;top:20%;left:12%"></div>
-  <div class="hero-accent-line" style="height:40%;top:35%;right:32%"></div>
-  <div class="hero-glow" style="top:-10%;right:-5%"></div>
-  <div class="hero-glow" style="bottom:-20%;left:20%;opacity:.5"></div>
-  <!-- Large decorative building silhouette -->
-  <div class="hero-deco hidden lg:block">
-    <svg width="600" height="800" viewBox="0 0 600 800" fill="none">
-      <rect x="80" y="200" width="120" height="600" stroke="white" stroke-width=".5" rx="2"></rect>
-      <rect x="230" y="80" width="140" height="720" stroke="white" stroke-width=".5" rx="2"></rect>
-      <rect x="400" y="300" width="110" height="500" stroke="white" stroke-width=".5" rx="2"></rect>
-      <rect x="250" y="100" width="20" height="20" fill="rgba(212,175,55,.3)"></rect>
-      <rect x="280" y="100" width="20" height="20" fill="rgba(212,175,55,.15)"></rect>
-      <rect x="250" y="130" width="20" height="20" fill="rgba(212,175,55,.15)"></rect>
-      <rect x="280" y="130" width="20" height="20" fill="rgba(212,175,55,.3)"></rect>
-      <rect x="250" y="160" width="20" height="20" fill="rgba(212,175,55,.1)"></rect>
-      <rect x="310" y="100" width="20" height="20" fill="rgba(212,175,55,.1)"></rect>
-      <line x1="0" y1="800" x2="600" y2="800" stroke="rgba(212,175,55,.08)" stroke-width="1"></line>
-    </svg>
-  </div>
-
-  <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 pt-32 pb-40 w-full dot-grid">
-    <div class="max-w-3xl">
+  <div class="hero-accent-line" style="height:60%;top:20%;left:12%;opacity:.4"></div>
+  <div class="hero-accent-line" style="height:40%;top:35%;right:32%;opacity:.25"></div>
+  <div class="hero-glow" style="top:-10%;right:-5%;opacity:.4"></div>
+  <div class="hero-glow" style="bottom:-20%;left:20%;opacity:.35"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 pt-32 pb-40 w-full">
+  <div class="max-w-3xl glass-w rounded-3xl px-8 py-9 md:px-10 md:py-10 bg-navy/65 border-white/10 shadow-2xl shadow-navy/40">
       <div class="section-label rv" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span></span>
         <span data-cn-i="">海外房东首选托管服务</span><span data-en-i="">The Trusted Choice for Overseas Landlords</span>
       </div>
-      <h1 class="heading-cn text-[2.8rem] md:text-[4.5rem] lg:text-[5.5rem] font-black text-white leading-[1.06] tracking-tight mb-8 rv" data-cn="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <h1 class="heading-cn text-[3rem] md:text-[4.8rem] lg:text-[5.6rem] font-black text-white leading-[1.06] tracking-tight mb-8 rv" data-cn="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;text-shadow:0 14px 40px rgba(0,0,0,.75);">
         您的吉隆坡房产<br>值得<span class="gold-grad">更专业的</span>管理
       </h1>
-      <h1 class="font-display text-[2.8rem] md:text-[4.5rem] lg:text-[5.5rem] font-black text-white leading-[1] tracking-tight mb-8 rv" data-en="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <h1 class="font-display text-[3rem] md:text-[4.8rem] lg:text-[5.6rem] font-black text-white leading-[1] tracking-tight mb-8 rv" data-en="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;text-shadow:0 14px 40px rgba(0,0,0,.75);">
         Your KL Property<br>Deserves <span class="gold-grad">Better</span><br>Management
       </h1>
-      <p class="text-xl md:text-2xl text-white/50 max-w-xl mb-12 leading-relaxed rv" data-cn="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <p class="text-xl md:text-2xl text-white/70 max-w-xl mb-10 leading-relaxed rv" data-cn="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
         专为海外投资者打造吉隆坡物业管理，专业团队，透明价格，多语服务，消除沟通与信任障碍。
       </p>
-      <p class="text-xl md:text-2xl text-white/50 max-w-xl mb-12 leading-relaxed rv" data-en="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <p class="text-xl md:text-2xl text-white/70 max-w-xl mb-10 leading-relaxed rv" data-en="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
         Premium KL property management built for overseas investors. Professional team, transparent pricing, multilingual service — eliminating every barrier of communication and trust.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 rv" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
         <a href="https://wa.me/60103343184" class="btn-g bg-gold text-navy font-bold px-10 py-4 rounded-full text-center text-base">
           <span data-cn-i="">立即预约免费评估</span><span data-en-i="">Book Free Assessment</span>
         </a>
-        <a href="#pricing" class="border-2 border-white/15 text-white font-bold px-10 py-4 rounded-full hover:bg白/5 transition text-center text-base">
+        <a href="#pricing" class="border-2 border-white/15 text-white font-bold px-10 py-4 rounded-full hover:bg-white/5 transition text-center text-base">
           <span data-cn-i="">查看收费标准</span><span data-en-i="">View Pricing</span>
         </a>
       </div>
@@ -187,15 +171,15 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
   <div class="max-w-5xl mx-auto px-5">
     <div class="grid grid-cols-3 gap-3 md:gap-5">
       <div class="glass-w rounded-2xl p-5 md:p-7 lift rv text-center" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <p class="text-[10px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-cn-i="">管理房产</p><p class="text-[10px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-en-i="">Properties Managed</p>
+        <p class="text-[20px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-cn-i="">管理房产</p><p class="text-[20px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-en-i="">Properties Managed</p>
         <p class="text-3xl font-black text-navy">100+</p>
       </div>
       <div class="glass-w rounded-2xl p-5 md:p-7 lift rv text-center" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <p class="text-[10px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-cn-i="">管理费低至（每月）</p><p class="text-[10px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-en-i="">Monthly Fee From</p>
+        <p class="text-[20px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-cn-i="">管理费低至（每月）</p><p class="text-[20px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-en-i="">Monthly Fee From</p>
         <p class="text-3xl font-black text-navy">5% <span class="text-base text-navy/40">/ RM150</span></p>
       </div>
       <div class="glass-w rounded-2xl p-5 md:p-7 lift rv text-center" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <p class="text-[10px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-cn-i="">客户经理</p><p class="text-[10px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-en-i="">Relationship Manager</p>
+        <p class="text-[20px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-cn-i="">客户经理</p><p class="text-[20px] font-bold text-navy/30 tracking-widest mb-2 uppercase" data-en-i="">Relationship Manager</p>
         <p class="text-2xl md:text-3xl font-black text-navy" data-cn="">1对1专属</p><p class="text-2xl md:text-3xl font-black text-navy" data-en="">1-on-1</p>
       </div>
     </div>
