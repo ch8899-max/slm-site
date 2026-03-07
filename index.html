@@ -33,6 +33,12 @@ body{font-family:'Noto Sans SC','Montserrat',sans-serif;color:#1A2332;overflow-x
 .btn-g:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,175,55,.3)}
 .nav-s{background:#ffffff!important;backdrop-filter:blur(20px);box-shadow:0 1px 20px rgba(26,35,50,.07)}
 .nav-s .nl,.nav-s .nlogo-text,.nav-s .lang-btn,.nav-s .hamburger-icon{color:#1A2332!important}
+#nav .nl,#nav .lang-btn,#nav .hamburger-icon{color:#1A2332!important}
+#nav img,#nav .nav-logo,#nav .nav-logo-wrap{opacity:1!important;visibility:visible!important;display:block!important;max-height:5rem;width:auto;position:relative!important;z-index:10000!important}
+#nav .nav-inner{overflow:visible!important;min-height:0}
+#nav .nl{font-size:1.25rem!important}
+#nav .lang-btn{font-size:1rem!important}
+#nav .btn-g{font-size:1.3125rem!important}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,1,.36,1)}
 .faq-a.open{max-height:600px}
 .faq-q .faq-arrow{transition:transform .3s}
@@ -54,9 +60,9 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 .section-label{display:flex;align-items:center;gap:12px;margin-bottom:28px}
 .section-label span:first-child{width:32px;height:1px;background:#D4AF37}
 .section-label span:last-child{color:#D4AF37;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.nav-logo{height:52px;width:auto;transition:filter .3s}
-.nav-logo-white{filter:brightness(0) invert(1)}
-.nav-s .nav-logo-white{filter:none}
+.hero-section-label span:first-child{background:#fff!important}
+.hero-section-label span:not(:first-child){color:#fff!important;font-size:1rem!important}
+.nav-logo{height:auto;max-height:5rem;width:auto;object-fit:contain;vertical-align:middle}
 .quote-mark{font-family:Georgia,serif;font-size:4rem;line-height:1;color:#D4AF37;opacity:.3}
 
 /* HERO STATIC DESIGN */
@@ -80,23 +86,23 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 <body style="">
 
 <!-- ===== 1. NAVBAR ===== -->
-<nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 nav-s">
-<div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-32">
-  <a href="#top" class="flex items-center gap-4">
-    <img src="./Logo-Chinese_v1.png" alt="臻享家 Standard Living Management" class="nav-logo h-32 w-auto" style="max-height:8rem;">
+<nav id="nav" class="transition-all duration-500 nav-s" style="background-color:#ffffff!important;">
+<div class="nav-inner max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-24 w-full" style="overflow:visible;">
+  <a href="#top" class="nav-logo-wrap flex items-center shrink-0" style="opacity:1!important;visibility:visible!important;">
+    <img src="./Logo/Logo-Chinese_v1.png" alt="臻享家 Standard Living Management" class="nav-logo w-auto brightness-0" style="max-height:5rem;height:auto;opacity:1!important;visibility:visible!important;object-fit:contain;">
   </a>
   <div class="hidden lg:flex items-center gap-9">
-    <a href="#services" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">服务方案</a>
-    <a href="#pricing" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">收费标准</a>
-    <a href="#about" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">关于我们</a>
-    <a href="#faq" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">常见问题</a>
-    <a href="#services" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Services</a>
-    <a href="#pricing" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Pricing</a>
-    <a href="#about" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">About</a>
-    <a href="#faq" class="nl text-white/80 text-sm font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">FAQ</a>
+    <a href="#services" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">服务方案</a>
+    <a href="#pricing" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">收费标准</a>
+    <a href="#about" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">关于我们</a>
+    <a href="#faq" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors" data-cn="">常见问题</a>
+    <a href="#services" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Services</a>
+    <a href="#pricing" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">Pricing</a>
+    <a href="#about" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">About</a>
+    <a href="#faq" class="nl text-white/80 text-xl font-semibold tracking-wider hover:text-gold transition-colors uppercase" data-en="">FAQ</a>
   </div>
   <div class="hidden lg:flex items-center gap-4">
-    <button onclick="toggleLang()" class="lang-btn text-white/40 text-xs font-bold tracking-widest hover:text-white transition cursor-pointer" id="langBtn">EN / 中文</button>
+    <button onclick="toggleLang()" class="lang-btn text-white/40 text-base font-bold tracking-widest hover:text-white transition cursor-pointer" id="langBtn">EN / 中文</button>
     <a href="https://wa.me/60103343184" target="_blank" class="btn-g bg-gold text-navy font-bold text-sm px-6 py-2.5 rounded-full">
       <span data-cn-i="">免费咨询</span><span data-en-i="">Free Consult</span>
     </a>
@@ -138,9 +144,9 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
   <div class="hero-accent-line" style="height:40%;top:35%;right:32%;opacity:.25"></div>
   <div class="hero-glow" style="top:-10%;right:-5%;opacity:.4"></div>
   <div class="hero-glow" style="bottom:-20%;left:20%;opacity:.35"></div>
-  <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 pt-32 pb-40 w-full">
-  <div class="max-w-3xl glass-w rounded-3xl px-8 py-9 md:px-10 md:py-10 bg-navy/65 border-white/10 shadow-2xl shadow-navy/40">
-      <div class="section-label rv" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span></span>
+  <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 pt-32 pb-40 w-full flex flex-col items-center justify-center text-center">
+  <div class="max-w-3xl glass-w rounded-3xl px-8 py-9 md:px-10 md:py-10 bg-navy/65 border-white/10 shadow-2xl shadow-navy/40 mx-auto">
+      <div class="section-label hero-section-label rv" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span></span>
         <span data-cn-i="">海外房东首选托管服务</span><span data-en-i="">The Trusted Choice for Overseas Landlords</span>
       </div>
       <h1 class="heading-cn text-[3rem] md:text-[4.8rem] lg:text-[5.6rem] font-black text-white leading-[1.06] tracking-tight mb-8 rv" data-cn="" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;text-shadow:0 14px 40px rgba(0,0,0,.75);">
@@ -673,7 +679,7 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 <div class="max-w-7xl mx-auto px-5 lg:px-8">
   <div class="grid md:grid-cols-4 gap-12 md:gap-8">
     <div>
-      <div class="mb-5"><img src="./Logo-Chinese_v1.png" alt="臻享家" class="h-16 w-auto brightness-0 invert opacity-80"></div>
+      <div class="mb-5"><img src="./Logo/Logo-Chinese_v1.png" alt="臻享家" class="h-16 w-auto brightness-0 invert opacity-80"></div>
       <p class="text-white/35 text-base leading-relaxed" data-cn="">托管交给臻享，安心交给我们。</p>
       <p class="text-white/35 text-base leading-relaxed" data-en="">Expat Living, Perfected.</p>
     </div>
@@ -703,13 +709,9 @@ body.en [data-cn-i]{display:none}body.en [data-en-i]{display:inline}
 </a>
 
 <script>
+(function(){var nav=document.getElementById('nav');function keepNavWhite(){if(nav){nav.classList.add('nav-s');nav.style.setProperty('background-color','#ffffff','important');}}keepNavWhite();window.addEventListener('scroll',keepNavWhite);document.addEventListener('DOMContentLoaded',keepNavWhite);})();
 function toggleLang(){document.body.classList.toggle('en');const e=document.body.classList.contains('en');document.getElementById('langBtn').textContent=e?'中文 / EN':'EN / 中文';const m=document.getElementById('langBtnM');if(m)m.textContent=e?'中文 / EN':'EN / 中文'}
 function closeMM(){document.getElementById('mm').classList.remove('open')}
-const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{
-  const s=window.scrollY>60;nav.classList.toggle('nav-s',s);
-  document.querySelector('.nav-logo')?.classList.toggle('nav-logo-white',!s);
-});
-document.addEventListener('DOMContentLoaded',()=>{if(window.scrollY<=60)document.querySelector('.nav-logo')?.classList.add('nav-logo-white')});
 function toggleFaq(b){const a=b.nextElementSibling,o=a.classList.contains('open');document.querySelectorAll('.faq-a').forEach(x=>x.classList.remove('open'));document.querySelectorAll('.faq-q').forEach(x=>x.classList.remove('active'));if(!o){a.classList.add('open');b.classList.add('active')}}
 gsap.registerPlugin(ScrollTrigger);document.querySelectorAll('.rv').forEach((el,i)=>{gsap.fromTo(el,{opacity:0,y:36},{opacity:1,y:0,duration:1,ease:'power4.out',scrollTrigger:{trigger:el,start:'top 92%',once:true},delay:i%3*.1})});
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
