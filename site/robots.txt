@@ -1,18 +1,15 @@
+# robots.txt for std-living.com
+# SLM 臻享家 - Standard Living Management
+
 User-agent: *
 Allow: /
 
+# Block irrelevant crawlers from wasting your crawl budget
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
 # Sitemap location
 Sitemap: https://www.std-living.com/sitemap.xml
-
-# Allow all major search engine crawlers
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: Yandex
-Allow: /
